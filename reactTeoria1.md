@@ -60,5 +60,14 @@
 
   Paquete que facilita la interacción y actualización del DOM en aplicaciones React. **DOM** significa **Document object Model**. es una representación en el navegador de todos los elementos que conforman una página o aplicación web.
 
+### Esctructura de un componente.
+
+   
+  <img src="images/estructuras1.jpg" width="70%">
+
+  - Una ves que se define la estructura del componente es importante saber como renderizarlo.
+
+  <img src="images/estructuras2.jpg" width="70%">
+
 
  
