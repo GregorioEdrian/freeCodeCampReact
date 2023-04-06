@@ -69,5 +69,23 @@
 
   <img src="images/estructuras2.jpg" width="70%">
 
+### Crear un proyecti react.
+   
+
+   - Primero en la terninar usamos el comando.
+      ~~~
+        npx create-react-app mi-app
+        npm start 
+      ~~~
+
+      ~~~
+        npx create-react-app mi-app
+        npm start 
+      ~~~
+  
+  - Unas de las cosas claves a hacer es identificar los componentes que necesitaremos para nuestra app.
+
+### Crear un componente.
+    
 
  
