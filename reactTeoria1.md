@@ -86,6 +86,14 @@
   - Unas de las cosas claves a hacer es identificar los componentes que necesitaremos para nuestra app.
 
 ### Crear un componente.
-    
+
+
+  - Podemos usar iconos populares instalando React Icons.
+  - El paquete uuid se utiza para crear un identificador unico.
+
+  ~~~
+  npm install react-icons --save
+  npm install uuid
+  ~~~
 
  
