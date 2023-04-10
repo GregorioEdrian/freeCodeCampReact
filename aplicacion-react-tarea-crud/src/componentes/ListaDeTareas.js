@@ -5,7 +5,22 @@ import Tarea from './Tarea';
 
 function ListadeTareas(){
 
-  const [tareas, setTareas] = useState([]);
+  const obtenerTareasLocalStorage = () => {
+    var tareasObtenidas = localStorage.getItem('tareas');
+    tareasObtenidas = JSON.parse(tareasObtenidas);
+    var tareasArray = [];
+    for (let i = 0; i<tareasObtenidas.length; i++ ){
+      tareasArray = [tareasObtenidas[i], ...tareasArray]
+    }
+    console.log(tareasArray)
+    
+    return tareasArray;
+    
+  }
+
+  /*const [tareas, setTareas] = useState([]);*/
+
+  const [tareas, setTareas] = useState(obtenerTareasLocalStorage());
 
   const agregarTarea = tarea => {
     if (tarea.texto.trim()){
@@ -13,15 +28,18 @@ function ListadeTareas(){
       
       const tareasActualizadas = [tarea, ...tareas];
       setTareas(tareasActualizadas);
+      localStorage.setItem('tareas',JSON.stringify(tareasActualizadas))
     }else{
       alert('El campo esta vacio')
     }
+    
   }
 
   const eliminarTarea = id => {
     const tareasActualizadas = tareas.filter(
       tarea => tarea.id !== id);
       setTareas(tareasActualizadas);
+      localStorage.setItem('tareas',JSON.stringify(tareasActualizadas))
   }
 
   const completarTarea = id => {
@@ -32,6 +50,7 @@ function ListadeTareas(){
       return tarea
     });
     setTareas(tareaActualizada);
+    localStorage.setItem('tareas',JSON.stringify(tareaActualizada))
   }
 
   return(

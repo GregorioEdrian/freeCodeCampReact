@@ -143,4 +143,9 @@
   - Esto generará un archivo ejecutable en la carpeta dist con el nombre my_api. Ejecuta el archivo para iniciar la API.
 
   - Verifica que la API está funcionando visitando http://localhost:8000 en tu navegador.
+
+
+# Como desplegar nuestro sitio.
+
+  
  
